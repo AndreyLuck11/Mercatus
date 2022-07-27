@@ -1,0 +1,13 @@
+ .myBtn{
+     display: block;
+     margin: 0 auto;
+    padding: 5px 15px;
+    color: #000000;
+    font-size: 20px;
+    background: #ffffff;
+    border: 2px solid #000000;
+    cursor: pointer;
+     text-transform: uppercase;
+
+}
+

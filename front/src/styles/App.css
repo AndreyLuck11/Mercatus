@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap');
+@import url(navbar/navbar.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+#root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*.App{*/
+/*    width: 800px;*/
+/*}*/
+
+.container{
+    width: 1200px;
+}
+
+.post{
+    display: flex;
+    padding: 15px;
+    border: 2px solid teal;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post__btn{
+    
+    display: flex;
+
+}
+
+
+.post-enter {
+    opacity: 0;
+}
+
+.post-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+.post-exit {
+    opacity: 1;
+}
+
+.post-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
+
+.page__wrapper{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.page{
+    padding: 10px;
+    border: 1px solid teal;
+    cursor: pointer;
+}
+
+.page__current {
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+
+
+.product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product__item{
+    height: 400px;
+    width: 250px;
+    display: flex;
+    padding: 15px;
+    border: 3px solid #000000;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product__title{
+    font-size: 27px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.product__description{
+    font-size: 15px;
+}
+
+.product__price{
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.product__image{
+    max-height: 150px;
+    max-width: 200px;
+}
+
+
+
+.main{
+    /*background-image: url("../../src/img/main_bac.jpg");*/
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../src/img/main_bac.jpg');
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    min-height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+
+}
+.main__title{
+    position: absolute;
+    font-size: 150px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+
+.react-select-container{
+    margin-bottom: 10px !important;
+}
+
+.button_send{
+    display: block;
+}
+
+.input__wrapper_fils{
+    margin: 10px;
+    justify-content: center;
+}
